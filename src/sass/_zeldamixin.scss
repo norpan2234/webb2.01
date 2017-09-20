@@ -1,0 +1,30 @@
+@mixin heartpixelcolors ($heartmap) {
+    $heart-colors: (
+t: transparent,
+g: #646464,
+r: #ff0033,
+w: #ffffff,
+    );
+
+
+
+    .px {
+       
+
+        height: (100%/6);
+        width: (100%/7);
+
+        float: left;
+    }
+
+    $num: 1; //vilken pixel vi ska färglägga
+
+    @each $value in $heartmap {
+        .px:nth-child(#{$num}) {
+            background-color: map-get($heart-colors, $value);
+        }
+
+        $num: $num + 1;
+    }
+
+}

@@ -1,0 +1,49 @@
+body {
+  background-color: #3C3CAD; }
+
+.box {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 8%;
+  width: 600px;
+  height: 420px;
+  background-color: none;
+  border: solid 3px white; }
+
+.head {
+  position: absolute;
+  top: 16.5%;
+  left: 25%;
+  width: 50%;
+  height: 67%;
+  background: #A6BECF;
+  border-radius: 50%; }
+
+.head-copy {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #A6BECF;
+  border-radius: 50%;
+  z-index: 2; }
+
+.ear-left {
+  position: absolute;
+  width: 60%;
+  height: 65%;
+  left: -20%;
+  top: 5%;
+  background: #A6BECF;
+  border-radius: 50%;
+  z-index: 1; }
+
+.ear-right {
+  position: absolute;
+  width: 60%;
+  height: 65%;
+  left: -20%;
+  top: 5%;
+  background: #A6BECF;
+  border-radius: 50%;
+  z-index: 1; }

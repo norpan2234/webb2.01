@@ -1,0 +1,38 @@
+$background: E6E8E5;
+$red: BB3430;
+$button: 49101CC;
+$glass: B0DFE5;
+$lens1: 3A3A3A;
+$lens2: 6E6E6E;
+$lens3: 606060;
+$lens4: 333333;
+
+.box {
+    position: relative;
+    background: red;
+    display: block; 
+    margin: auto;
+    height: 400px;
+    width: 600px;
+    border-radius: 50%;
+    z-index: 0;
+    
+    &::before {
+        content: "";
+        top: 20%;
+        position: absolute;
+        background: $red;
+        height: 60%;
+        width: 100%;
+        z-index: 1;
+        
+    }
+}
+
+.button {
+    
+    position: absolute;
+    background: $button;
+
+
+}

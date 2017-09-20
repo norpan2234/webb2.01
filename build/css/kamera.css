@@ -1,0 +1,21 @@
+.box {
+  position: relative;
+  background: red;
+  display: block;
+  margin: auto;
+  height: 400px;
+  width: 600px;
+  border-radius: 50%;
+  z-index: 0; }
+  .box::before {
+    content: "";
+    top: 20%;
+    position: absolute;
+    background: BB3430;
+    height: 60%;
+    width: 100%;
+    z-index: 1; }
+
+.button {
+  position: absolute;
+  background: 49101CC; }

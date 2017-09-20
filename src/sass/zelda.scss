@@ -1,0 +1,61 @@
+@import "zeldamixin";
+@import "zeldasword";
+
+$heart-one:
+
+"t", "g", "g", "t", "g", "g", "t",
+"g", "r", "r", "g", "r", "r", "g",
+"g", "r", "r", "g", "r", "r", "g",
+"t", "g", "r", "r", "r", "g", "t",
+"t", "t", "g", "r", "g", "t", "t",
+"t", "t", "t", "g", "t", "t", "t";
+
+$heart-two:
+
+"t", "g", "g", "t", "g", "g", "t",
+"g", "r", "r", "g", "r", "r", "g",
+"g", "r", "r", "g", "r", "r", "g",
+"t", "g", "r", "r", "r", "g", "t",
+"t", "t", "g", "r", "g", "t", "t",
+"t", "t", "t", "g", "t", "t", "t";
+
+$heart-three:
+"t", "g", "g", "t", "g", "g", "t",
+"g", "r", "r", "g", "w", "w", "g",
+"g", "r", "r", "g", "w", "w", "g",
+"t", "g", "r", "r", "w", "g", "t",
+"t", "t", "g", "r", "g", "t", "t",
+"t", "t", "t", "g", "t", "t", "t";
+
+
+body {
+    background-color: #E3D081;
+}
+
+
+.heart {
+    $size: 70px;
+
+    height: $size*6/7;
+    width: $size;
+
+    float: left;
+
+    margin-right: $size*1/7;
+}
+
+.heart-box {
+
+}
+
+
+.heart__one {
+    @include heartpixelcolors($heart-one);
+    }
+.heart__two {
+        @include heartpixelcolors($heart-two);
+    }
+.heart__three {
+    @include heartpixelcolors($heart-three);
+    }
+
