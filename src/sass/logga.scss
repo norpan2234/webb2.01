@@ -4,87 +4,99 @@ $spanish-orange: #EA6C00;
 $chrome-yellow: #FDAD00;
 $middle-red-purple: #210E3D;
 
-body {
-    background: $middle-red-purple;
+body{
+  background: $middle-red-purple;
 }
 
-.box {
-    position: relative;
-    display: block;
-    margin: auto;
-    margin-top: 8%;
-    border: solid 3px white; 
-    height: 400px;
-    width: 600px;
+.box{
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-top: 8%;
+  height: 400px;
+  width: 600px;
 }
-.large-bottom-triangle {
-    position: absolute;
-    width: 50%;
-    left: 25%;
-    bottom: 5%;
-    height: 55%;
-    background: $spanish-orange;
-    -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
-    clip-path: polygon(100% 0, 0 0, 50% 100%);
-}
-.medium-bottom-triangle {
-position: absolute;
-height: 100%;
-width: 60%;
-left: 20%;
-background: $chrome-yellow;
--webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+
+.large-bottom-triangle{
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  bottom: 5%;
+  height: 55%;
+  background: $spanish-orange;
+  -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
 clip-path: polygon(100% 0, 0 0, 50% 100%);
 }
-.large-top-triangle {
-    position: absolute;
-    height: 30%;
-    width: 30%;
-    background: $peach;
-    left: 35%;
-    top: 10.01%;
-    -webkit-clip-path: polygon(100% 100%, 50% 0, 0 100%);
-    clip-path: polygon(100% 100%, 50% 0, 0 100%);
+
+.medium-bottom-triangle{
+  position: absolute;
+  height: 100%;
+  width: 60%;
+  left: 20%;
+  background: $chrome-yellow;
+  -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+clip-path: polygon(100% 0, 0 0, 50% 100%);
 }
-.right-top-triangle-left {
-position: absolute;
--webkit-clip-path: polygon(100% 100%, 100% 0, 0 100%);
+
+.large-top-triangle{
+  position: absolute;
+  height: 30%;
+  width: 30%;
+  background: $peach;
+  left: 35%;
+  top: 10.1%;
+  -webkit-clip-path: polygon(100% 100%, 50% 0, 0 100%);
+clip-path: polygon(100% 100%, 50% 0, 0 100%);
+}
+
+.right-top-triangle-left{
+ position: absolute;
+  -webkit-clip-path: polygon(100% 100%, 100% 0, 0 100%);
 clip-path: polygon(100% 100%, 100% 0, 0 100%);
-background: $chrome-yellow;
-height: 30%;
-top: 10.1%;
-left: 25%;
-width: 10%;
-
-}
-.right-top-triangle-right {
-    position: absolute;
-    -webkit-clip-path: polygon(100% 100%, 0 0, 0 100%);
-    clip-path: polygon(100% 100%, 0 0, 0 100%);
-    background: $chrome-yellow;
-    height: 30%;
-    top: 10.1%;
-    right: 25%;
-    width: 10%;
-}
-.medium-top-triangle-left {
-    position: absolute;
-    -webkit-clip-path: polygon(0 100%, 100% 0, 0 0);
-    clip-path: polygon(0 100%, 100% 0, 0 0);
-    background: $sunglow;
-    width: 15.1%;
-    height: 30%;
-    top: 10.1%;
-    left: 35%;
+  background: $chrome-yellow;
+  height: 30%;
+  top: 10.1%;
+  left: 25%;
+  width: 10%;
 }
 
-.medium-top-triangle-right {
-    position: absolute;
-    -webkit-clip-path: polygon(0 0, 100% 100%, 100% 0);
-    clip-path: polygon(0 0, 100% 100%, 100% 0);
-    background: $sunglow;
-    width: 15.1%;
-    height: 30%;
-    top: 10.1%;
-    right: 35%;
+.right-top-triangle-right{
+ position: absolute;
+  -webkit-clip-path: polygon(100% 100%, 0 0, 0 100%);
+clip-path: polygon(100% 100%, 0 0, 0 100%);
+  background: $chrome-yellow;
+  height: 30%;
+  top: 10.1%;
+  right: 25%;
+  width: 10%;
+}
+
+.medium-top-triangle-left{
+  position: absolute;
+  -webkit-clip-path: polygon(0 100%, 100% 0, 0 0);
+clip-path: polygon(0 100%, 100% 0, 0 0);
+  background: $sunglow;
+  width: 15.1%;
+  height: 30%;
+  top: 10.1%;
+  left: 35%;
+}
+
+.medium-top-triangle-right{
+  position: absolute;
+ -webkit-clip-path: polygon(0 0, 100% 100%, 100% 0);
+clip-path: polygon(0 0, 100% 100%, 100% 0);
+  background: $sunglow;
+  width: 15.1%;
+  height: 30%;
+  top: 10.1%;
+  right: 35%;
+}
+
+@media all and (max-width: 600px) {
+   .box{
+    margin-top: 100px;
+    width: 250px;
+    height: 175px;
+  }
 }

@@ -1,0 +1,30 @@
+@mixin zeldasword ($map) {
+    $sword-colors: (
+t: transparent,
+b: #C07001,
+g: #ACFE30,
+w: #ffffff,
+    );
+
+
+
+    .px {
+       
+
+        height: (100%/16);
+        width: (100%/7);
+
+        float: left;
+    }
+
+    $num: 1; //vilken pixel vi ska färglägga
+
+    @each $value in $map {
+        .px:nth-child(#{$num}) {
+            background-color: map-get($sword-colors, $value);
+        }
+
+        $num: $num + 1;
+    }
+
+}

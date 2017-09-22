@@ -27,10 +27,33 @@ $heart-three:
 "t", "t", "g", "r", "g", "t", "t",
 "t", "t", "t", "g", "t", "t", "t";
 
+$zeldasword:
+"t", "t", "t", "b", "t", "t", "t",
+"t", "t", "b", "b", "b", "t", "t",
+"t", "t", "b", "b", "b", "t", "t",
+"t", "t", "b", "b", "b", "t", "t",
+"t", "t", "b", "b", "b", "t", "t",
+"t", "t", "b", "b", "b", "t", "t",
+"t", "t", "b", "b", "b", "t", "t",
+"t", "t", "b", "b", "b", "t", "t",
+"t", "t", "b", "b", "b", "t", "t",
+"t", "t", "b", "b", "b", "t", "t",
+"g", "g", "g", "g", "g", "g", "g",
+"g", "t", "b", "b", "b", "t", "g",
+"t", "t", "g", "g", "g", "t", "t",
+"t", "t", "b", "b", "b", "t", "t",
+"t", "t", "g", "g", "g", "t", "t";
+
 
 body {
     background-color: #E3D081;
+    font-family: 'VT323', monospace;
+    font-size: 3rem;
 }
+
+.heart-box {
+    
+    }
 
 
 .heart {
@@ -44,11 +67,6 @@ body {
     margin-right: $size*1/7;
 }
 
-.heart-box {
-
-}
-
-
 .heart__one {
     @include heartpixelcolors($heart-one);
     }
@@ -59,3 +77,14 @@ body {
     @include heartpixelcolors($heart-three);
     }
 
+.zeldasword {
+    $size: 70px;
+    
+    height: $size*16/7;
+    width: $size;
+    
+    float: left;
+    
+    margin-right: $size*1/7;
+    @include zeldasword ($zeldasword);
+}

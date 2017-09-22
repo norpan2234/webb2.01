@@ -6,7 +6,6 @@ body {
   display: block;
   margin: auto;
   margin-top: 8%;
-  border: solid 3px white;
   height: 400px;
   width: 600px; }
 
@@ -35,7 +34,7 @@ body {
   width: 30%;
   background: #FEEEB7;
   left: 35%;
-  top: 10.01%;
+  top: 10.1%;
   -webkit-clip-path: polygon(100% 100%, 50% 0, 0 100%);
   clip-path: polygon(100% 100%, 50% 0, 0 100%); }
 
@@ -78,3 +77,9 @@ body {
   height: 30%;
   top: 10.1%;
   right: 35%; }
+
+@media all and (max-width: 600px) {
+  .box {
+    margin-top: 100px;
+    width: 250px;
+    height: 175px; } }
